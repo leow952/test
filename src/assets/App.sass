@@ -1,0 +1,67 @@
+html, body
+  margin: 0
+  padding: 0
+#root
+  width: calc(100vw - 40px)
+  height: calc(100vh - 40px)
+  padding: 20px
+.header
+  width: calc(100% - 10px)
+  height: 50px
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  align-content: space-between
+  justify-content: space-between
+  align-items: center
+  background-color: #7AB5E0
+  opacity: 0.8
+  padding: 0 5px
+  .category
+    display: flex
+    button
+      border: none
+      background: none
+      color: #205780
+      &.active
+        background: #20577F
+        color: #D4E0E9
+        border-radius: 4px
+        padding: 2px 12px
+  input
+    width: 46px
+    height: 22px
+    text-align: center
+    background: none
+    border: solid 1px #EBEBEB
+
+table
+  width: 100%
+  max-height: calc(80vh - 40px)
+  overflow-y: auto
+  border: 1px solid #D4E0E9
+  border-bottom: none
+  border-collapse: collapse
+  thead
+    background-color: #7AB5E0
+    position: sticky
+    top: 0
+  tbody
+    tr
+      td
+        border-bottom: 1px solid #D4E0E9
+        &.endTab
+          text-align: end
+          display: flex
+          flex-direction: row
+          flex-wrap: nowrap
+          align-content: space-around
+          justify-content: space-between
+          align-items: center
+
+.cart
+  position: fixed
+  width: calc(100vw - 40px)
+  bottom: 20px
+  max-height: calc(20vh - 20px)
+  overflow-y: scroll
